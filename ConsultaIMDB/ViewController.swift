@@ -43,7 +43,7 @@ class ViewController: UIViewController {
                             self.duracion.text = String( data["Runtime"]!!.description)
                             self.genero.text = String( data["Genre"]!!.description)
                         }else{
-                            let alertController = UIAlertController(title: "iOScreator", message:
+                            let alertController = UIAlertController(title: "Pelicula invalida", message:
                                 "Debe introducir un codigo valido", preferredStyle: UIAlertControllerStyle.Alert)
                             alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
                             
