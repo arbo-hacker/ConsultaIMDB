@@ -12,10 +12,8 @@ import Alamofire
 class ViewController: UIViewController {
 
     @IBOutlet weak var imdbCode: UITextField!
-    @IBOutlet weak var titulo: UILabel!
-    @IBOutlet weak var año: UILabel!
-    @IBOutlet weak var duracion: UILabel!
-    @IBOutlet weak var genero: UILabel!
+    
+    var results: NSDictionary?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,10 +36,8 @@ class ViewController: UIViewController {
                 if respuesta.result.isSuccess{
                     if let data = respuesta.result.value{
                         if  data["Response"]!!.description != "False"{
-                            self.titulo.text = data["Title"]!!.description
-                            self.año.text = String( data["Year"]!!.description)
-                            self.duracion.text = String( data["Runtime"]!!.description)
-                            self.genero.text = String( data["Genre"]!!.description)
+                            self.results = data as? NSDictionary
+                            self.performSegueWithIdentifier("results", sender: nil)
                         }else{
                             let alertController = UIAlertController(title: "Pelicula invalida", message:
                                 "Debe introducir un codigo valido", preferredStyle: UIAlertControllerStyle.Alert)
@@ -53,6 +49,10 @@ class ViewController: UIViewController {
                 }
         }
         
+    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let resultsViewController = segue.destinationViewController as! QueryResultViewController;
+        resultsViewController.results = self.results
     }
 
 
