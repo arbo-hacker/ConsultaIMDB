@@ -13,18 +13,20 @@
 		21D0A3751C0E28340083AE2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21D0A3741C0E28340083AE2A /* Assets.xcassets */; };
 		21D0A3781C0E28340083AE2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21D0A3761C0E28340083AE2A /* LaunchScreen.storyboard */; };
 		21D0A3801C0E288B0083AE2A /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 21D0A37F1C0E288B0083AE2A /* Cartfile */; };
-		21D0A3861C0E2B6C0083AE2A /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 21D0A3811C0E2A6C0083AE2A /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		21D0A3891C0E360F0083AE2A /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D0A3881C0E360F0083AE2A /* SwiftyJSON.swift */; };
+		76F28E111C0E782400DD1C99 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F28E0D1C0E77ED00DD1C99 /* Alamofire.framework */; };
+		76F28E121C0E782400DD1C99 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 76F28E0D1C0E77ED00DD1C99 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		76F28E151C0E795000DD1C99 /* QueryResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F28E141C0E795000DD1C99 /* QueryResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		21D0A3871C0E2B6D0083AE2A /* Embed Frameworks */ = {
+		76F28E131C0E782400DD1C99 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				21D0A3861C0E2B6C0083AE2A /* Alamofire.framework in Embed Frameworks */,
+				76F28E121C0E782400DD1C99 /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,9 +42,10 @@
 		21D0A3771C0E28340083AE2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21D0A3791C0E28340083AE2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21D0A37F1C0E288B0083AE2A /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
-		21D0A3811C0E2A6C0083AE2A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		21D0A3841C0E2AD40083AE2A /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		21D0A3881C0E360F0083AE2A /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		76F28E0D1C0E77ED00DD1C99 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		76F28E141C0E795000DD1C99 /* QueryResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76F28E111C0E782400DD1C99 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +63,7 @@
 		21D0A3611C0E28340083AE2A = {
 			isa = PBXGroup;
 			children = (
-				21D0A3811C0E2A6C0083AE2A /* Alamofire.framework */,
+				76F28E0D1C0E77ED00DD1C99 /* Alamofire.framework */,
 				21D0A37F1C0E288B0083AE2A /* Cartfile */,
 				21D0A36C1C0E28340083AE2A /* ConsultaIMDB */,
 				21D0A36B1C0E28340083AE2A /* Products */,
@@ -85,6 +89,7 @@
 				21D0A3791C0E28340083AE2A /* Info.plist */,
 				21D0A3841C0E2AD40083AE2A /* MyPlayground.playground */,
 				21D0A3881C0E360F0083AE2A /* SwiftyJSON.swift */,
+				76F28E141C0E795000DD1C99 /* QueryResultViewController.swift */,
 			);
 			path = ConsultaIMDB;
 			sourceTree = "<group>";
@@ -99,7 +104,7 @@
 				21D0A3661C0E28340083AE2A /* Sources */,
 				21D0A3671C0E28340083AE2A /* Frameworks */,
 				21D0A3681C0E28340083AE2A /* Resources */,
-				21D0A3871C0E2B6D0083AE2A /* Embed Frameworks */,
+				76F28E131C0E782400DD1C99 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,6 +170,7 @@
 			files = (
 				21D0A3891C0E360F0083AE2A /* SwiftyJSON.swift in Sources */,
 				21D0A3701C0E28340083AE2A /* ViewController.swift in Sources */,
+				76F28E151C0E795000DD1C99 /* QueryResultViewController.swift in Sources */,
 				21D0A36E1C0E28340083AE2A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +327,7 @@
 				21D0A37E1C0E28340083AE2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
